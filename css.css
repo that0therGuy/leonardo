@@ -81,7 +81,7 @@ p,pre{
     justify-content: center;
     align-items: center;
     
-    flex-direction:column;
+    flex-direction:column !important;
     height:fit-content;
     padding:40px;
     background:linear-gradient(rgb(255, 0, 191,.1),rgb(255, 0, 106,.1),rgba(255, 0, 64, 0.1));
@@ -109,9 +109,49 @@ p,pre{
     backdrop-filter: blur(5px);
     filter:grayscale(50%);
 }
+
+.frame{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    gap:40px;
+    flex-direction:row !important;
+    margin:10px;
+}
+img{
+    border-radius:10px;
+    transition:all 1s !important;
+}
+.credits2{
+    display:flex;
+    
+    justify-content: center;
+    align-items: center;
+    height:fit-content;
+    flex-direction:column;
+    padding:40px;
+    background:linear-gradient(rgb(255, 0, 191,.1),rgb(255, 0, 106,.1),rgba(255, 0, 64, 0.1));
+    box-shadow:  20px 20px 60px #bebebe,-20px -20px 60px #ffffff;
+    margin:9%;
+    border-radius:10px;
+    backdrop-filter: blur(1px);
+    
+}
+.img{
+    
+ 
+    box-shadow:  20px 20px 60px #424242,-20px -20px 60px #ffd4e8;
+    
+}
+img:hover{
+    transform:skew(-5deg,-5deg);
+}
 @media only screen and (max-width: 600px) {
     .leo{
         font-size:450%;
+    }
+    .ch1{
+        font-size: 2.2em;
     }
     .credits{
         display:flex;
@@ -127,6 +167,28 @@ p,pre{
         backdrop-filter: blur(1px);
         
     }
+    .credits2{
+        display:flex;
+        
+        justify-content: center;
+        align-items: center;
+        height:fit-content;
+        flex-direction:column;
+        padding:40px;
+        background:linear-gradient(rgb(255, 0, 191,.1),rgb(255, 0, 106,.1),rgba(255, 0, 64, 0.1));
+        box-shadow:  20px 20px 60px #bebebe,-20px -20px 60px #ffffff;
+        margin:9%;
+        border-radius:10px;
+        backdrop-filter: blur(1px);
+        
+    }
+    .frame{
+        
+        flex-direction:column !important;
+
+        
+    }
+    
     .buttons{
         height:15px;
         flex-direction:column;
@@ -134,26 +196,9 @@ p,pre{
         margin-bottom:30%;
         background-color:transparent;
     }
+    img{
+        height:80%;
+        width:80%;
+    }
 
-}
-.frame{
-    display:flex;
-    justify-content: center;
-    align-items:center;
-    gap:40px;
-    flex-direction:row !important;
-    margin:10px;
-}
-img{
-    border-radius:10px;
-    transition:all 1s !important;
-}
-.img{
-    
- 
-    box-shadow:  20px 20px 60px #424242,-20px -20px 60px #ffd4e8;
-    
-}
-img:hover{
-    transform:skew(-5deg,-5deg);
 }
