@@ -5,7 +5,7 @@
     display:flex;
     justify-content: center;
     align-items:center;
-    height:102svh;
+    height:100dvh;
     flex-direction:column;
     gap:0px;
 
@@ -32,13 +32,13 @@ body{
     font-family:'Poppins';
     font-weight:bold;
     margin:0;
-
+    background-attachment:scroll;
     user-select:none;
     background-color: #ffffff;
     background-image: radial-gradient(circle, #7c003a 1px, transparent 1px);
     background-position: 0 0;
     background-size: 50px 50px;
-    
+    transition:all .5s ;
 }
 h1{
     margin:0px;
@@ -46,9 +46,14 @@ h1{
 }
 
 .leo{
-    font-size:100px;
+    font-size:650%;
     color:transparent;
     background:linear-gradient(90deg, rgba(89,0,255,1) 0%, rgba(177,6,255,1) 27%, rgba(255,65,174,1) 73%, rgba(255,35,172,1) 78%);
+    background-clip:text; 
+}
+p{
+    color:transparent;
+    background:linear-gradient(90deg, rgb(159, 108, 255) 0%, rgb(212, 120, 255) 27%, rgb(255, 119, 196) 73%, rgb(255, 120, 203) 78%);
     background-clip:text; 
 }
 .davinci{
@@ -62,7 +67,8 @@ h1{
     display:flex;
     justify-content: center;
     align-items: center;
-    height:100vh;
+    
+    flex-direction:column;
     
 }
 .ch1{
@@ -76,13 +82,60 @@ h1{
 }
 .credits{
     display:flex;
+    
     justify-content: center;
     align-items: center;
-    height:10em;
-    background:linear-gradient(rgb(255, 0, 191,.2),rgb(255, 0, 106,.2),rgb(255, 0, 0,.2));
-    box-shadow:0 0 70px rgb(124, 124, 124);
+    height:fit-content;
+    padding:40px;
+    background:linear-gradient(rgb(255, 0, 191,.1),rgb(255, 0, 106,.1),rgba(255, 0, 64, 0.1));
+    box-shadow:  20px 20px 60px #bebebe,-20px -20px 60px #ffffff;
     margin:60px;
     border-radius:10px;
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(1px);
 }
 
+.a,.b{
+    background:linear-gradient(rgba(174, 0, 255, 0.1),rgba(255, 0, 221, 0.1),rgba(255, 0, 98, 0.1));
+    box-shadow:  20px 20px 60px #bebebe,
+             -20px -20px 60px #ffffff;
+    padding:20px;
+    border-radius:10px;
+    backdrop-filter: blur(1px);
+    transition:all .5s !important;
+}
+.a:hover,.b:hover{
+    background:linear-gradient(rgba(174, 0, 255, 0.1),rgba(255, 0, 221, 0.1),rgba(255, 0, 98, 0.1));
+    box-shadow:  20px 20px 60px #bebebe,
+             -20px -20px 60px #ffffff;
+    padding:25px;
+    border-radius:15x;
+    backdrop-filter: blur(5px);
+    filter:grayscale(50%);
+}
+@media only screen and (max-width: 600px) {
+    .leo{
+        font-size:450%;
+    }
+    .credits{
+        display:flex;
+        
+        justify-content: center;
+        align-items: center;
+        height:fit-content;
+        padding:40px;
+        background:linear-gradient(rgb(255, 0, 191,.1),rgb(255, 0, 106,.1),rgba(255, 0, 64, 0.1));
+        box-shadow:  20px 20px 60px #bebebe,-20px -20px 60px #ffffff;
+        margin:9%;
+        border-radius:10px;
+        backdrop-filter: blur(1px);
+        
+    }
+    .buttons{
+        height:15px;
+        flex-direction:column;
+        gap:100%;
+        margin-bottom:30%;
+        background-color:transparent;
+    }
+
+}
