@@ -7,20 +7,26 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Leonardo Da Vinci</title>
 </head>
-<body>
-    <div class="title">
+<body data-0="background-color: #ffffff;" data-100="black">
+    <div class="title"data-0="filter:blur(0px);opacity:1;" data-380="filter:blur(7px);opacity:0;">
+        
         <h1 class="leo">Leonardo</h1>
         <br>
         <h1 class="davinci">Da Vinci</h1>
 
     </div>
     <div class="buttons">
-        <a href="inventions.html"data-aos="zoom-in-left"data-aos-duration="1000">Inventions</a>
-        <a href="inspiration.html"data-aos="zoom-in-right">Inspirations</a>
+        <div class="a"data-aos="zoom-out-right"data-aos-duration="1000"><a href="inventions.html">Inventions</a></div>
+        <div class="b"data-aos-duration="1000"data-aos="zoom-out-left"><a href="inspiration.html">Inspirations</a></div>
+        
     </div>
     
-        <div class="credits" data-aos="fade-down">
+        <div class="credits" data-aos="zoom-out"data-aos-duration="1500">
             <h1 class="ch1">Credits</h1>
+            <p>Project Development Team<br>
+                <br>
+                Jayesh - Lead Developer<br>
+                Shrey - Content Specialist<br>
         </div>
     
     
@@ -28,8 +34,25 @@
         
     </div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src=" https://cdn.jsdelivr.net/npm/simple-parallax-js@6.0.1/dist/react/simpleParallax.umd.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js" integrity="sha512-A2+khatRDWHUE2VUtN4xUTkr1nc4YfDBw9Sg3ea6x0aRPfpcYieDZji4D2edDHy/yF5NsYzP7kL8sSM8s5EqCw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
         AOS.init();
+        var s = skrollr.init();
+         
+        document.querySelector('.a').addEventListener('mouseover',()=>{
+            document.querySelector('.b').style.filter='blur(2px)';
+        })
+        document.querySelector('.a').addEventListener('mouseout',()=>{
+            document.querySelector('.b').style.filter='blur(0px)';
+        })
+        document.querySelector('.b').addEventListener('mouseover',()=>{
+            document.querySelector('.a').style.filter='blur(2px)';
+        })
+        document.querySelector('.b').addEventListener('mouseout',()=>{
+            document.querySelector('.a').style.filter='blur(0px)';
+        })
+
     </script>
 </body>
 </html>
