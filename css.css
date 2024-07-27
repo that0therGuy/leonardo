@@ -28,6 +28,7 @@ a{
     padding:10px;
     border-radius:10px;
 }
+
 body{
     font-family:'Poppins';
     font-weight:bold;
@@ -39,6 +40,7 @@ body{
     background-position: 0 0;
     background-size: 50px 50px;
     transition:all .5s ;
+    overflow-x:hidden;
 }
 h1{
     margin:0px;
@@ -50,8 +52,9 @@ h1{
     color:transparent;
     background:linear-gradient(90deg, rgba(89,0,255,1) 0%, rgba(177,6,255,1) 27%, rgba(255,65,174,1) 73%, rgba(255,35,172,1) 78%);
     background-clip:text; 
+    background-attachment: fixed;
 }
-p{
+p,pre{
     color:transparent;
     background:linear-gradient(90deg, rgb(159, 108, 255) 0%, rgb(212, 120, 255) 27%, rgb(255, 119, 196) 73%, rgb(255, 120, 203) 78%);
     background-clip:text; 
@@ -63,14 +66,7 @@ p{
     color:transparent;
     
 }
-.credits{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    
-    flex-direction:column;
-    
-}
+
 .ch1{
     
 
@@ -82,13 +78,14 @@ p{
 }
 .credits{
     display:flex;
-    
     justify-content: center;
     align-items: center;
+    
+    flex-direction:column;
     height:fit-content;
     padding:40px;
     background:linear-gradient(rgb(255, 0, 191,.1),rgb(255, 0, 106,.1),rgba(255, 0, 64, 0.1));
-    box-shadow:  20px 20px 60px #bebebe,-20px -20px 60px #ffffff;
+    box-shadow:  20px 20px 60px #a7a7a7,-20px -20px 60px #ffffff;
     margin:60px;
     border-radius:10px;
     backdrop-filter: blur(1px);
@@ -138,4 +135,25 @@ p{
         background-color:transparent;
     }
 
+}
+.frame{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    gap:40px;
+    flex-direction:row !important;
+    margin:10px;
+}
+img{
+    border-radius:10px;
+    transition:all 1s !important;
+}
+.img{
+    
+ 
+    box-shadow:  20px 20px 60px #424242,-20px -20px 60px #ffd4e8;
+    
+}
+img:hover{
+    transform:skew(-5deg,-5deg);
 }
