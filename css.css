@@ -151,9 +151,7 @@ img{
     box-shadow:  20px 20px 60px #424242,-20px -20px 60px #ffd4e8;
     
 }
-img:hover{
-    transform:skew(-5deg,-5deg);
-}
+
 @media only screen and (max-width: 600px) {
     .leo{
         font-size:450%;
@@ -209,4 +207,9 @@ img:hover{
         width:80%;
     }
 
+}
+.imgx{
+    height:800px;
+    width:600px;
+    box-shadow:  20px 20px 60px #685c63,-20px -20px 60px #ffbcde;
 }
