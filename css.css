@@ -40,7 +40,7 @@ body{
     background-position: 0 0;
     background-size: 50px 50px;
     transition:all .5s ;
-    
+    overflow-x:hidden;
 }
 h1{
     margin:0px;
@@ -54,10 +54,18 @@ h1{
     background-clip:text; 
     background-attachment: fixed;
 }
-p,pre{
+p,a{
     color:transparent;
     background:linear-gradient(90deg, rgb(159, 108, 255) 0%, rgb(212, 120, 255) 27%, rgb(255, 119, 196) 73%, rgb(255, 120, 203) 78%);
     background-clip:text; 
+}
+a{
+    font-size:20px;
+    transition:all 1s !important;
+}
+a:hover{ 
+    rotate:360deg;
+    text-shadow:0 0 100px rgb(151, 151, 151);
 }
 .davinci{
     font-size:50px;
