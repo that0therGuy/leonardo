@@ -8,7 +8,7 @@
     <title>Leonardo Da Vinci</title>
 </head>
 <body data-aos="zoom-in">
-    <div class="title"data-0="filter:blur(0px);opacity:1;" data-380="filter:blur(7px);opacity:0;">
+    <div class="title"data-0="filter:blur(0px);opacity:1; transform: translate(0px, 0px);" data-380="filter:blur(7px);opacity:0; transform: translate(0, 100px);">
         
         <h1 class="leo">Leonardo</h1>
         <br>
@@ -23,11 +23,12 @@
     
         <div class="credits" data-aos="zoom-out-up"data-aos-duration="1500" data-400="opacity:1;" data-0="opacity:0;">
             
-            <h1 class="ch1">Credits</h1><br><br>
-            <p>
-               Jayesh - Lead Developer, Lead Designer<br>
-                Shrey - Content Specialist, Helper<br> 
+            <h1 class="ch1">Credits</h1>
+            <p>Project Development Team:<br>
+                
+                @that0therguy - Lead Developer, Lead Designer<br>
             </p>
+            <a id='git'href="https://github.com/that0therguy">Github</a>
                 
         </div>
     
@@ -41,7 +42,9 @@
     <script>
         AOS.init();
         var s = skrollr.init();
-         
+        if (s.isMobile()) {
+            s.destroy();
+        }
         document.querySelector('.a').addEventListener('mouseover',()=>{
             document.querySelector('.b').style.filter='blur(2px)';
         })
