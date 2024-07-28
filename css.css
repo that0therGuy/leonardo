@@ -47,7 +47,7 @@ h1{
     filter:drop-shadow(0 0 40px rgb(92, 92, 92));
 }
 
-.leo{
+.leo,.leo2{
     font-size:650%;
     color:transparent;
     background:linear-gradient(90deg, rgba(89,0,255,1) 0%, rgba(177,6,255,1) 27%, rgba(255,65,174,1) 73%, rgba(255,35,172,1) 78%);
@@ -156,8 +156,13 @@ img{
     .leo{
         font-size:450%;
     }
+    .leo2{
+        font-size:450%;
+        text-align:center;
+    }
     .ch1{
         font-size: 2.2em;
+        text-align: center;
     }
     .credits{
         display:flex;
@@ -173,6 +178,7 @@ img{
         backdrop-filter: blur(1px);
         
     }
+    
     .credits2{
         display:flex;
         
@@ -209,7 +215,9 @@ img{
 
 }
 .imgx{
-    height:800px;
-    width:600px;
+    
+    height:90%;
+    width:90%;
+    
     box-shadow:  20px 20px 60px #685c63,-20px -20px 60px #ffbcde;
 }
